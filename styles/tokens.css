@@ -1,20 +1,37 @@
 :root {
   color-scheme: light dark;
 
-  --bg: #0b0d10;
-  --bg-elev: #111418;
-  --fg: #e7e9ee;
-  --muted: #9aa3ae;
+  /* 背景と前景 */
+  --bg: #ffffff;
+  --bg-elev: #f7f7f8;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
 
-  --primary: #5aa0ff;
-  --primary-600: #3f87eb;
-  --border: #222833;
-  --ring: rgba(90,160,255,.35);
+  /* アクセント（黒とグレーの階調のみ） */
+  --primary: #222222;
+  --primary-hover: #333333;
+  --border: #d0d0d0;
+  --ring: rgba(0, 0, 0, 0.1);
 
-  --radius: 12px;
-  --radius-sm: 8px;
+  /* 角丸・余白 */
+  --radius: 10px;
+  --radius-sm: 6px;
   --space-3: 12px;
   --space-4: 16px;
   --space-5: 20px;
   --space-6: 24px;
+}
+
+/* ダークモード対応 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0b;
+    --bg-elev: #161616;
+    --fg: #f2f2f2;
+    --muted: #aaaaaa;
+    --primary: #f2f2f2;
+    --primary-hover: #dcdcdc;
+    --border: #2a2a2a;
+    --ring: rgba(255, 255, 255, 0.12);
+  }
 }
