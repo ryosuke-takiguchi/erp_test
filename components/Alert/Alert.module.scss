@@ -1,0 +1,14 @@
+.root {
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+  margin: 0 0 var(--space-4);
+  display: grid;
+  gap: var(--space-3);
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+}
+
+.success { border-color: rgba(56,192,142,.4); background: rgba(56,192,142,.1); color: #9cf2cb; }
+.error   { border-color: rgba(239,83,80,.45); background: rgba(239,83,80,.1); color: #ffb3b3; }
+.warning { border-color: rgba(249,200,86,.45); background: rgba(249,200,86,.1); color: #ffe6a0; }
+.info    { border-color: rgba(90,160,255,.45); background: rgba(90,160,255,.1); color: #b6d3ff; }

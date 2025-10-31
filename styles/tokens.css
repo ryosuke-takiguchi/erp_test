@@ -1,0 +1,20 @@
+:root {
+  color-scheme: light dark;
+
+  --bg: #0b0d10;
+  --bg-elev: #111418;
+  --fg: #e7e9ee;
+  --muted: #9aa3ae;
+
+  --primary: #5aa0ff;
+  --primary-600: #3f87eb;
+  --border: #222833;
+  --ring: rgba(90,160,255,.35);
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+}
