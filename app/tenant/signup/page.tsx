@@ -102,7 +102,7 @@ export default function TenantSignupStatic() {
       });
 
       if (res.ok) {
-        window.location.href = "/tenant/signup/sent";
+        window.location.href = "/tenant/signup-send";
       } else {
         const text = await res.text().catch(() => "");
         alert(text || "送信に失敗しました。時間をおいて再度お試しください。");
