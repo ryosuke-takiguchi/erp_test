@@ -1,9 +1,12 @@
 export default function HomePage() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 text-gray-800">
-      <h1 className="text-3xl font-bold mb-4">IMPCODE ERP SYSTEM</h1>
+      <h1 className="text-3xl font-bold mb-4">ImpCode Nexus Workspace</h1>
       <p className="text-sm text-gray-600">
-        クラウド型ERPシステム（開発中）へようこそ。
+        個人的なワークスペースから、チームでのコラボレーションまで、
+      </p>
+      <p className="text-sm text-gray-600">
+        あらゆるニーズに対応する統合プラットフォーム。
       </p>
 
       <div className="mt-6 space-x-4">

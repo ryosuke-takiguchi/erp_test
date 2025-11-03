@@ -5,26 +5,40 @@ import React from "react";
 export default function TenantSignupStatic() {
   return (
     <main>
-      <h1>ImpCode ERP</h1>
+      <h1>ImpCode NW </h1>
         <div className="max-w-md mx-auto bg-white border border-gray-300 rounded-2xl p-6 shadow-sm">
         <h2>テナント新規登録</h2>
-        <p>会社単位での管理アカウントを作成します。</p>
-
+        <p>新規テナント及び管理者アカウントを作成します。</p>
+        <br />
         <form action="/public/tenants/signup" method="post" className="space-y-5">
-          {/* 会社名 */}
+          {/* テナント名称 */}
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-900">
-              会社名 <span className="text-orange-600">*</span>
+            <label htmlFor="tenantname" className="block text-sm font-medium text-gray-900">
+              テナント名称 <span className="text-orange-600">*</span>
             </label>
             <input
               type="text"
-              id="company"
-              name="company"
-              placeholder="株式会社インプコード"
+              id="tenantname"
+              name="tenantname"
+              placeholder="2〜80文字 例）株式会社インプコード"
               required
               className="mt-1 w-full rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-300"
             />
-            <small className="mt-1 block text-xs text-gray-500">2〜80文字</small>
+          </div>
+
+          {/* テナントID */}
+          <div>
+            <label htmlFor="tenantid" className="block text-sm font-medium text-gray-900">
+              テナントID <span className="text-orange-600">*</span>
+            </label>
+            <input
+              type="text"
+              id="tenantid"
+              name="tenantid"
+              placeholder="英数字　例）impcode123"
+              required
+              className="mt-1 w-full rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-300"
+            />
           </div>
 
           {/* 管理者メールアドレス */}
@@ -51,7 +65,7 @@ export default function TenantSignupStatic() {
               type="password"
               id="password"
               name="password"
-              placeholder="12文字以上。大/小/数字/記号を含む"
+              placeholder="8文字以上。大/小/数字/記号を含む"
               required
               className="mt-1 w-full rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-300"
             />
