@@ -1,12 +1,9 @@
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 text-gray-800">
-      <h1 className="text-3xl font-bold mb-4">ImpCode Nexus Workspace</h1>
+    <main className="min-h-screen text-center flex flex-col items-center justify-center bg-gray-50 text-gray-800">
+      <h1 className="text-3xl font-bold mb-4">ImpCode <br />Nexus Workspace</h1>
       <p className="text-sm text-gray-600">
-        個人的なワークスペースから、チームでのコラボレーションまで、
-      </p>
-      <p className="text-sm text-gray-600">
-        あらゆるニーズに対応する統合プラットフォーム。
+        個人的なワークスペース。チームでのコラボレーション。<br />あらゆるニーズに対応する統合プラットフォーム。
       </p>
 
       <div className="mt-6 space-x-4">
